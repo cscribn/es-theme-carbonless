@@ -9,7 +9,7 @@
       <color>FFFFFF90</color>
       <tile>true</tile>
     </image>
-    <ninepatch name="crt_border" extra="true" tinyScreen="false">
+    <ninepatch name="crt_border" extra="true">
       <pos>0 0</pos>
       <size>1 1</size>
       <path>./../../art/shaders/crt_border.png</path>

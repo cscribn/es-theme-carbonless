@@ -22,7 +22,7 @@ originally based on: "simple" by nils bonenberger
     <menuText name="menutext">
       <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
       <fontSize>0.026</fontSize>
-      <fontSize tinyScreen="true">0.034</fontSize>
+      <!--<fontSize tinyScreen="true">0.034</fontSize>-->
       <color>969696</color>
       <separatorColor>00000000</separatorColor>
       <selectorColor>${baseColor}</selectorColor>

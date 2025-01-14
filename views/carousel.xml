@@ -8,7 +8,7 @@ originally based on: "simple" by nils bonenberger
 -->
 <theme defaultView="Icons">
   <formatVersion>7</formatVersion>
-  <customView name="Carousel" inherits="grid" tinyScreen="false" displayName="${carouselViewName}">
+  <customView name="Carousel" inherits="grid" displayName="${carouselViewName}">
     <text name="md_name">
       <color>ffffffff</color>
       <pos>0.04 0.76</pos>

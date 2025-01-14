@@ -68,7 +68,7 @@
       <path>./../../art/logos/jp/${system.theme}.svg</path>
       <path>./../../art/logos/jp/${system.theme}-w.svg</path>
     </image>
-    <image name="carousel-topline" extra="true" tinyScreen="false">
+    <image name="carousel-topline" extra="true">
       <path>./../../art/white.png</path>
       <color>${baseColor}</color>
       <origin>0 0</origin>
@@ -76,7 +76,7 @@
       <size>1 0.005</size>
       <zIndex>45</zIndex>
     </image>
-    <image name="carousel-bottomline" extra="true" tinyScreen="false">
+    <image name="carousel-bottomline" extra="true">
       <path>./../../art/white.png</path>
       <color>${baseColor}</color>
       <origin>0 0</origin>
@@ -84,6 +84,7 @@
       <size>1 0.005</size>
       <zIndex>45</zIndex>
     </image>
+    <!--
     <carousel name="systemcarousel" tinyScreen="true">
       <pos>0 0.35</pos>
       <size>1 0.60</size>
@@ -92,6 +93,7 @@
       <logoScale>2.6</logoScale>
       <logoPos>-1 0.1</logoPos>
     </carousel>
+    -->
     <!--
     <image name="carousel-inner" extra="true">
       <path>./../../art/carousel.png</path>
