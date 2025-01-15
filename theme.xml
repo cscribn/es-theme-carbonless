@@ -64,7 +64,7 @@ languages and missing systems (batocera v36): by maioni
     <thumbnail>thumbnail</thumbnail>
     <animatedInfobar>Animated preview bar</animatedInfobar>
   </variables>
-  <include>./lang/en.xml</include> <!-- Always include en as it's the default -->
+  <include>./lang/en.xml</include> <!-- Always include en as it's the default --> 
   <include lang="ar">./lang/ar.xml</include>
   <include lang="ca">./lang/ca.xml</include>
   <include lang="de">./lang/de.xml</include>
@@ -85,7 +85,7 @@ languages and missing systems (batocera v36): by maioni
   <include lang="ro_RO">./lang/ro_RO.xml</include>
   <include lang="ru">./lang/ru.xml</include>
   <include lang="uk">./lang/ru.xml</include>
-  <include lang="zh">./lang/zh.xml</include>
+  <include lang="zh">./lang/zh.xml</include> 
 
   <!-- Colorsets  -->
   <subset name="colorset" displayName="${subset.colorset}">
@@ -103,10 +103,10 @@ languages and missing systems (batocera v36): by maioni
   <include>./views/menu.xml</include>
   <include>./views/screen.xml</include>
   <include>./views/system.xml</include>
-
+  
   <!-- Subset option for System information -->
   <subset name="subsetSystemInfo" displayName="${systemViewInfo}">
-    <include name="extended" displayName="${extended}">./subsets/extendedinfo.xml</include>
+    <include name="extended" displayName="${extended}" tinyScreen="false">./subsets/extendedinfo.xml</include>
     <include name="standard" displayName="${standard}"/>
     <include name="none" displayName="${none}">./subsets/noinfo.xml</include>
   </subset>
@@ -115,8 +115,8 @@ languages and missing systems (batocera v36): by maioni
     <include name="darkened" displayName="${systemview.darkened}">./subsets/systemview/horizontaldark.xml</include>
     <include name="imagegrid" displayName="${systemview.gridName}">./subsets/systemview/imagegrid.xml</include>
     <include name="horizontal" displayName="${systemview.horizontal}">./subsets/systemview/horizontal.xml</include>
-    <include name="legacy" displayName="${systemview.legacy}">./subsets/systemview/legacy.xml</include>
-    <include name="transparent" displayName="${systemview.transparent}">./subsets/systemview/transparent.xml</include>
+    <include name="legacy" displayName="${systemview.legacy}" tinyScreen="false">./subsets/systemview/legacy.xml</include>
+    <include name="transparent" displayName="${systemview.transparent}" tinyScreen="false">./subsets/systemview/transparent.xml</include>
     <include name="simple" displayName="${systemview.simple}">./subsets/systemview/verticalone.xml</include>
     <include name="vertical"  displayName="${systemview.vertical}">./subsets/systemview/vertical.xml</include>
     <include name="wheel" displayName="${systemview.wheel}">./subsets/systemview/wheel.xml</include>
@@ -156,10 +156,10 @@ languages and missing systems (batocera v36): by maioni
   <include>./views/boxes.xml</include>
   <include>./views/carousel.xml</include>
   <include>./views/tiles.xml</include>
-  <include>./views/icons.xml</include>
-
+  <include>./views/icons.xml</include>  
+  
   <!-- Subset option for blur effects -->
-  <subset name="blurfx" displayName="${subset.blurfx}" ifArch="windows,x86_64">
+  <subset name="blurfx" displayName="${subset.blurfx}" ifArch="windows,x86_64" tinyScreen="false">
     <include name="yes" displayName="${yes}">./subsets/blurfx.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>
@@ -190,12 +190,10 @@ languages and missing systems (batocera v36): by maioni
 	</subset>
 
   <!-- Layout for small screens -->
-  <!--
   <subset tinyScreen="true" name="optimizesmallscreens" displayName="${optimizesmallscreensSubsetName}">
     <include name="yes" displayName="${yes}">./layouts/gpicase.xml</include>
     <include name="no" displayName="${no}"/>
   </subset>
-  -->
 
   <!-- Subset options for grid views -->
   <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="Boxes,grid">
@@ -218,18 +216,18 @@ languages and missing systems (batocera v36): by maioni
     <include name="no" displayName="${no}"/>
     <include name="yes" displayName="${yes}">./subsets/grid/previewbar.xml</include>
   </subset>
-  <subset name="animatedInfobar" displayName="${animatedInfobar}" appliesTo="detailed,grid,gamecarousel,Tiles,Icons,Carousel,Boxes,Content">
+  <subset tinyScreen="false" name="animatedInfobar" displayName="${animatedInfobar}" appliesTo="detailed,grid,gamecarousel,Tiles,Icons,Carousel,Boxes,Content">
     <include ifArch="windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}">./subsets/animatedpreview.xml</include>
     <include name="no" displayName="${no}"/>
     <include ifNotArch="windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}">./subsets/animatedpreview.xml</include>
   </subset>
-
+  
   <!-- Subset options for Tiles view -->
-  <subset name="glowsel" displayName="${glowSubsetName}" appliesTo="Tiles, Icons">
+  <subset tinyScreen="false" name="glowsel" displayName="${glowSubsetName}" appliesTo="Tiles, Icons">
     <include name="yes" displayName="${yes}"/>
     <include name="no" displayName="${no}">./subsets/tiles/noglow.xml</include>
   </subset>
-  <subset name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles, Icons, Content">
+  <subset tinyScreen="false" name="tileborders" displayName="${roundBorderSubsetName}" appliesTo="Tiles, Icons, Content">
     <!-- default to yes for fast platforms only -->
     <include ifArch="windows,x86,x86_64,odroidc4,odroidxu4" name="yes" displayName="${yes}"/>
     <include name="no" displayName="${no}">./subsets/tiles/squareborders.xml</include>
@@ -246,7 +244,7 @@ languages and missing systems (batocera v36): by maioni
   <subset name="marqueetiles" displayName="${logosSubsetName}" appliesTo="Tiles">
     <include name="yes" displayName="${yes}">./subsets/tiles/marquee.xml</include>
     <include name="no" displayName="${no}"/>
-  </subset>
+  </subset>  
  	<subset name="carouselimagesource" displayName="${gamecarouseltype}" appliesTo="gamecarousel">
 		<include name="marquee" displayName="${marquee}">./subsets/carouselimagesource/marquee.xml</include>
 		<include name="image" displayName="${image}">./subsets/carouselimagesource/image.xml</include>
@@ -259,6 +257,6 @@ languages and missing systems (batocera v36): by maioni
   </subset>
 
   <!-- Add content view at end as it requires the subsets to be loaded -->
-  <include>./views/content.xml</include>
+  <include>./views/content.xml</include>  
   <include>./layouts/${system.theme}_2.xml</include>
 </theme>

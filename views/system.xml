@@ -26,9 +26,9 @@ originally based on: "simple" by nils bonenberger
       <color>FFFFFFFF</color>
       <glowColor>00000010</glowColor>
       <glowSize>3</glowSize>
-      <forceUppercase>false</forceUppercase>
+      <forceUppercase>false</forceUppercase>    
     </text>
-
+    
     <image name="logo">
       <!-- try png -->
       <path>./../art/logos/${system.theme}.png</path>
@@ -81,7 +81,7 @@ originally based on: "simple" by nils bonenberger
       <zIndex>19</zIndex>
       <linearSmooth>true</linearSmooth>
     </image>
-  </view>
+  </view>    
   <feature supported="manufacturer">
     <view name="system">
       <text name="manufacturerName" extra="static">
@@ -92,15 +92,14 @@ originally based on: "simple" by nils bonenberger
         <fontSize>0.060</fontSize>
         <pos>0.029 0.037</pos>
         <size>0.942 0.28</size>
-        <color>C0C0C0</color>
+        <color>C0C0C0</color>      
         <zIndex>100</zIndex>
         <color>D0D0D0FF</color>
         <glowColor>00000080</glowColor>
         <glowSize>1</glowSize>
-        <!--
+
         <fontSize tinyScreen="true">0.065</fontSize>
         <glowSize tinyScreen="true">1</glowSize>
-        -->
       </text>
       <text name="fullName" extra="true">
         <text>${system.fullName}</text>
@@ -109,17 +108,16 @@ originally based on: "simple" by nils bonenberger
         <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
         <fontSize>0.024</fontSize>
         <pos>0.03 0.12</pos>
-        <pos verticalScreen="true">0.03 0.10</pos>
+        <pos verticalScreen="true">0.03 0.10</pos>         
         <size>0.94 0.28</size>
         <zIndex>100</zIndex>
         <color>D0D0D0FF</color>
         <glowColor>000000A0</glowColor>
         <glowSize>1</glowSize>
-        <!--
+        
         <pos tinyScreen="true">0.03 0.13</pos>
         <glowColor tinyScreen="true">00000040</glowColor>
         <fontSize tinyScreen="true">0.035</fontSize>
-        -->
       </text>
       <text name="releaseYyear" extra="true">
         <text>${system.releaseYearOrNull}</text>
@@ -128,19 +126,18 @@ originally based on: "simple" by nils bonenberger
         <fontPath>./../art/fonts/Cabin-Regular.ttf</fontPath>
         <fontSize>0.024</fontSize>
         <pos>0.03 0.157</pos>
-        <pos verticalScreen="true">0.03 0.127</pos>
-        <size>0.94 0.28</size>
+        <pos verticalScreen="true">0.03 0.127</pos>         
+        <size>0.94 0.28</size>        
         <zIndex>100</zIndex>
         <color>D0D0D0FF</color>
         <glowColor>000000A0</glowColor>
         <glowSize>1</glowSize>
-        <!--
+                
         <pos tinyScreen="true">0.03 0.19</pos>
         <glowColor tinyScreen="true">00000040</glowColor>
         <fontSize tinyScreen="true">0.035</fontSize>
-        -->
-      </text>
+      </text> 
     </view>
   </feature>
-
+  
 </theme>
