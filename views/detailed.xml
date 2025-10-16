@@ -145,19 +145,12 @@ originally based on: "simple" by nils bonenberger
       <fontPath>./../art/fonts/Cabin-Bold.ttf</fontPath>
       <fontSize>0.023</fontSize>
     </text>
-    <text name="md_lbl_rating, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_genre, md_description, md_lbl_players, md_players">
+    <text name="md_lbl_rating, md_rating, md_lbl_lastplayed, md_lbl_playcount, md_playcount, md_lbl_releasedate, md_lbl_genre, md_genre, md_description, md_flag, md_hidden, md_kidgame, md_manual, md_lbl_players, md_players">
       <pos>1 1</pos>
     </text>
     <datetime name="md_lastplayed">
       <pos>1 1</pos>
     </datetime>
-    <image name="md_flag, md_hidden, md_kidgame, md_manual">
-      <pos>1 1</pos>
-      <maxSize>0 0</maxSize>
-    </image>
-    <rating name="md_rating">
-      <pos>1 1</pos>
-    </rating>
     <!--
     <image name="md_flag">
       <origin>0 0.5</origin>

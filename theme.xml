@@ -187,6 +187,8 @@ languages and missing systems (batocera v36): by maioni
     <include name="ScanLines" displayName="${scanlines}">./subsets/shader/scanlines.xml</include>
     <include name="Crt" displayName="${crt}">./subsets/shader/crt.xml</include>
   </subset>
+  <!-- Specific layout for systems -->
+  <include>./layouts/${system.theme}.xml</include>
   <!-- Layout when help is disabled -->
   <include ifHelpPrompts="false">./layouts/nohelp.xml</include>
 
@@ -265,4 +267,5 @@ languages and missing systems (batocera v36): by maioni
 
   <!-- Add content view at end as it requires the subsets to be loaded -->
   <include>./views/content.xml</include>  
+  <include>./layouts/${system.theme}_2.xml</include>
 </theme>
