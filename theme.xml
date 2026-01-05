@@ -198,12 +198,6 @@ languages and missing systems (batocera v36): by maioni
     <include name="no" displayName="${no}"/>
 	</subset>
 
-  <!-- Layout for small screens -->
-  <subset tinyScreen="true" name="optimizesmallscreens" displayName="${optimizesmallscreensSubsetName}">
-    <include name="yes" displayName="${yes}">./layouts/gpicase.xml</include>
-    <include name="no" displayName="${no}"/>
-  </subset>
-
   <!-- Subset options for grid views -->
   <subset name="videoboxes" displayName="${videoboxesSubsetName}" appliesTo="Boxes,grid">
     <include name="no" displayName="${no}"/>
