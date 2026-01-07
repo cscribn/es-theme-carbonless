@@ -5,6 +5,9 @@
     <carouselColor>FFFFFFD8</carouselColor>
   </variables>
   <view name="system">
+    <carousel name="systemcarousel">
+      <systemInfoDelay>0</systemInfoDelay>
+    </carousel>
     <text name="systemInfo">
       <backgroundColor>DDDDDDD8</backgroundColor>
       <color>000000FF</color>
