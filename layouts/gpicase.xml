@@ -11,8 +11,8 @@
   </view>
   <view name="system">
     <carousel name="systemcarousel">
-      <color>FFFFFF00</color>
-      <colorEnd>FFFFFF00</colorEnd>
+      <color>${carouselColor}</color>
+      <colorEnd>${carouselColor}</colorEnd>
       <!--    <pos>0 0.40</pos>
       <size>1 0.45</size>
       <maxLogoCount>1</maxLogoCount>
