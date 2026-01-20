@@ -66,6 +66,7 @@ languages and missing systems (batocera v36): by maioni
     <text>text</text>
     <thumbnail>thumbnail</thumbnail>
     <animatedInfobar>Animated preview bar</animatedInfobar>
+    <carouselColor>FFFFFF00</carouselColor>
   </variables>
   <include>./lang/en.xml</include> <!-- Always include en as it's the default --> 
   <include lang="ar">./lang/ar.xml</include>

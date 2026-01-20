@@ -6,5 +6,5 @@ Carbonless is a relatively up-to-date fork of [fabricecaruso/es-theme-carbon](ht
 * Replaced game icon with a transparent image.
 * Added arcade-classis and dkong systems.
 * Improved images for arcade, daphne, ecwolf, retrobat, tg-cd, and tg16 systems.
-* Maintained carousel, center fade, and system info on tiny screens.
-* Removed delay for displaying system from Legacy view.
+* Off-white carousel maintained for Legacy view on tiny screens.
+* Delay for displaying system info removed for Legacy view.
