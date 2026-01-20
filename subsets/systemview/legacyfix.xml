@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <theme>
-  <formatVersion>7</formatVersion>
-  <variables>
-    <carouselColor>FFFFFFD8</carouselColor>
-  </variables>
+  <formatVersion>4</formatVersion>
   <view name="system">
     <carousel name="systemcarousel">
       <systemInfoDelay>0</systemInfoDelay>
