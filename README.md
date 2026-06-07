@@ -4,7 +4,8 @@ Carbonless is a relatively up-to-date fork of [fabricecaruso/es-theme-carbon](ht
 
 * Updated gamelist with less metadata, hence "Carbonless".
 * Replaced game icon with a transparent image.
-* Added arcade-classis and dkong systems.
+* Added arcade-classis, dkong, and snes-smwh systems.
+* Added "Q-Bert" and "Donkey Kong Ports" collections.
 * Improved images for arcade, daphne, ecwolf, retrobat, tg-cd, and tg16 systems.
 * Off-white carousel maintained for Legacy view on tiny screens.
 * Delay for displaying system info removed for Legacy view.
